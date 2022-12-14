@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="nhapmang" type="text">
+<button  onclick="nhapmang()">nhap</button>
+<button  onclick="thaythe()">thay the</button>
+<p id="kqnhap"></p>
+<p id="kqthaythe"></p>
+<script>
+    let arr = []
+    function nhapmang() {
+        let a = document.getElementById('nhapmang').value;
+        arr.push(a)
+        document.getElementById('kqnhap').innerHTML = 'mang nhap la: ' +arr
+    }
+    function thaythe(){
+        for (let i = 0;i<arr.length;i++)
+        if (arr[i] === '-'){
+            arr[i] = '_';
+        }
+        document.getElementById('kqthaythe').innerHTML =  'mang thay the la: ' +arr
+    }
+</script>
+</body>
+</html>

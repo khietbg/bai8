@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="nhapso" type="text"><br>
+<button onclick="daonguoc()">dao nguoc</button>
+<p id="ketqua"></p>
+<script>
+     let num = document.getElementById('nhapso')
+     let so = []
+    function daonguoc(){
+         num = num.reverse()
+        console.log(num)
+        so.push(num)
+    }
+    document.getElementById('ketqua').innerHTML=so.join()
+</script>
+</body>
+</html>

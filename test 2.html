@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+<div style="text-align: center">
+    <label for=""></label>
+<input id="newStudent" type="text">
+<button>Create</button>
+</div>
+<table border="1" style="width: 100%">
+    <caption style="color: blue"> STUDENT MANAGE</caption>
+    <tr>
+        <th>STT</th>
+        <th>NAME</th>
+    </tr>
+    <tbody id="drawTable"></tbody>
+</table>
+<script>
+    let listStudent = [ngan,men];
+    let drawTable = "";
+    function showlistStudent() {
+        for (let i=0;i<listStudent.length;i++){
+        //   drawTable += '<tr>'+
+        //                 '<td>'+ (i + 1) + '</td>'+
+        //             '<td>'+ listStudent[i]+ '</td>'+
+        //              '<tr/>'
+        // }
+            //cach 2 string template
+            drawTable+= '<tr>'
+                      <td>${i+1}<td/>
+
+        document.getElementById('drawTable').innerHTML = drawTable;
+
+    }
+    showlistStudent()
+function createStudent(){
+        let newStudent = document.getElementById('newStudent').value;
+        if ('newStudent==""'){
+            document.getElementById('validate').innerHTML='the is required! please try again'
+        }else {
+            document.getElementById('validate').innerHTML= '<lable style="color: blue">'+ Create Student scuccess+"<lable/>>"
+            listStudent.push(newStudent)
+        }
+}
+// u + crud (update)
+    listStudent[0]='chinh'
+    console.log('sau khi gan',listStudent)
+</script>
+</body>
+</html>

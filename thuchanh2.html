@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let number_array = [-3,5,1,3,2,10]
+  // number_array.reverse()
+  // console.log(number_array)
+  let x = number_array
+  let a = 0;
+  let b = x.length-1;
+  while (a<b){
+    let c = x[a]
+    x[a] = x[b]
+    x[b] = c
+    a++;
+    b--;
+  }document.write(x);
+</script>
+</body>
+</html>

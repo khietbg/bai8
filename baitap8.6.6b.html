@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <input type="text" id="valueInput">
+    <button onclick="handleChangeChar()">Change</button>
+    <script>
+      function handleChangeChar(){
+      let valueInput = document.getElementById("valueInput").value;
+      let convertToArray = valueInput.split(" ")
+      let result = ""
+      for (let i = 0 ; i < convertToArray.length; i ++){
+      result += `${convertToArray[i].replaceAll("-","_")} `
+    }
+      alert(result)
+    }
+</script>
+</body>
+</html>
